@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+</head>
+<body>
+
+    <header id="inicio">
+        <h1>Minha Loja</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+
+        <h3>Categorias</h3>
+        <ul>
+            <li>Eletrônicos</li>
+            <li>Roupas</li>
+            <li>Calçados</li>
+        </ul>
+
+        <h3>Tabela de Produtos</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camiseta</td>
+                    <td>R$ 49,90</td>
+                    <td>Roupas</td>
+                </tr>
+                <tr>
+                    <td>Tênis</td>
+                    <td>R$ 199,90</td>
+                    <td>Calçados</td>
+                </tr>
+                <tr>
+                    <td>Fone de Ouvido</td>
+                    <td>R$ 89,90</td>
+                    <td>Eletrônicos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="categoria">Categoria favorita:</label><br>
+                    <select id="categoria" name="categoria">
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="roupas">Roupas</option>
+                        <option value="calcados">Calçados</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Acesso</legend>
+                <p>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha" minlength="8" required>
+                </p>
+            </fieldset>
+
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>Visite o <a href="https://www.w3schools.com" target="_blank">W3Schools</a> para aprender mais sobre HTML!</p>
+    </footer>
+
+</body>
+</html>
