@@ -1,0 +1,163 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #000000;
+  background-color: #a0e4ff;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  color: rgb(255, 255, 255);
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* --- HEADER E NAVEGAÇÃO --- */
+#topo {
+  background-color: #00457e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #000000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0400ff;
+}
+
+/* --- BANNER --- */
+#banner {
+  background-color: #00457e;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --- CARDS --- */
+.card {
+  background-color: #85c8ff;
+  border: 1px solid #0400ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #00457e;
+  transform: scale(1.01);
+}
+
+.preco {
+  color: #69faff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* --- BOTÕES --- */
+.botao {
+  background-color: #e6e7e7;
+  color: #0d0718;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background-color: #ffffff;
+  color: #1b112c;
+}
+
+/* --- TABELAS --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color:#00457e;
+  color: #fbfffe;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #00457e;
+}
+
+/* --- GALERIA --- */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #00457e;
+  border-radius: 6px;
+}
+
+/* --- FORMULÁRIO --- */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #004a61;
+  background-color: #00457e;
+  color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* --- RODAPÉ --- */
+footer {
+  background-color: #00457e;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 1px solid #00457e;
+}
