@@ -1,0 +1,181 @@
+/* ================== PASSO 2: BODY E GERAL ================== */
+body {
+    background-color: #f6f8fc;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Passo 6d: Compensação do header fixo */
+}
+
+/* Área central do site */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #7A2E1E; /* Cor vinho/pizza */
+}
+
+/* ================== PASSO 6: CABEÇALHO FIXO ================== */
+#topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7A2E1E;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+/* ================== PASSO 3: MENU ================== */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; /* Alterado para combinar com o fundo escuro do cabeçalho */
+    padding: 10px 16px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #4A1A10; /* Fundo mais escuro no hover */
+    border-radius: 5px;
+}
+
+/* ================== PASSO 4: CARDS (FLEXBOX) ================== */
+.grade {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative; /* Passo 5b: Prende a etiqueta absoluta aqui dentro */
+}
+
+/* ================== PASSO 5: ETIQUETA ABSOLUTA ================== */
+.etiqueta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #C0392B;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* ================== PASSO 7: BOTÕES E HOVER ================== */
+.botao {
+    background-color: #27AE60;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s; /* Transition no elemento base */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #1E8449; /* Fica mais escuro no hover */
+}
+
+/* ================== TABELA DE TAMANHOS ================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #7A2E1E;
+    color: white;
+}
+
+/* ================== FORMULÁRIO DE CONTATO ================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: #7A2E1E;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #4A1A10;
+}
+
+/* ================== DESAFIO OPCIONAL ================== */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #C0392B;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-topo:hover {
+    background-color: #922B21;
+}
