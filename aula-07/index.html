@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Forno de Pedra</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="topo">
+        <div class="container-header">
+            <h1>Forno de Pedra</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sabores">Sabores</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (Centralizado) -->
+    <main>
+        <!-- BANNER -->
+        <section id="banner">
+            <h2>Massa de fermentação natural</h2>
+            <p>Assada em forno a lenha, do jeito tradicional.</p>
+            <a href="#sabores" class="botao">Ver os sabores</a>
+        </section>
+
+        <!-- SABORES -->
+        <section id="sabores">
+            <h2>Nossos sabores</h2>
+            <div class="grade">
+                <div class="card">
+                    <h3>Marguerita</h3>
+                    <p>Molho de tomate, muçarela de búfala e manjericão fresco.</p>
+                    <p class="preco">R$ 49,00</p>
+                    <a href="#" class="botao">Pedir</a>
+                </div>
+
+                <div class="card">
+                    <h3>Calabresa</h3>
+                    <p>Calabresa fatiada, cebola roxa e azeitona preta.</p>
+                    <p class="preco">R$ 45,00</p>
+                    <a href="#" class="botao">Pedir</a>
+                </div>
+
+                <!-- CARD DESTAQUE COM ETIQUETA -->
+                <div class="card destaque">
+                    <span class="etiqueta">Mais vendida</span>
+                    <h3>Quatro Queijos</h3>
+                    <p>Muçarela, gorgonzola, parmesão e catupiry.</p>
+                    <p class="preco">R$ 55,00</p>
+                    <a href="#" class="botao">Pedir</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAMANHOS (TABELA) -->
+        <section>
+            <h2>Tamanhos</h2>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Tamanho</th>
+                        <th>Fatias</th>
+                        <th>Preço médio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Individual</td>
+                        <td>4</td>
+                        <td>R$ 29,00</td>
+                    </tr>
+                    <tr>
+                        <td>Média</td>
+                        <td>6</td>
+                        <td>R$ 45,00</td>
+                    </tr>
+                    <tr>
+                        <td>Grande</td>
+                        <td>8</td>
+                        <td>R$ 55,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section id="contato">
+            <h2>Como pedir</h2>
+            <p>1. Escolha o sabor e o tamanho.<br>2. Chame no WhatsApp ou use o formulário.<br>3. Retire no local ou peça entrega.</p>
+            
+            <form class="formulario">
+                <div class="campo">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Seu nome">
+                </div>
+                <div class="campo">
+                    <label>Telefone</label>
+                    <input type="text" placeholder="(51) 99999-9999">
+                </div>
+                <div class="campo">
+                    <label>Seu pedido</label>
+                    <textarea rows="4" placeholder="Ex.: uma grande de calabresa..."></textarea>
+                </div>
+                <button type="submit" class="botao">Enviar pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p><strong>Onde estamos</strong></p>
+        <p>Av. Guilherme Schell, 500 — Canoas/RS</p>
+        <p>Terça a domingo, das 18h às 23h</p>
+        <p><a href="#">Pizzaria Forno de Pedra — Canoas/RS</a></p>
+    </footer>
+
+    <!-- BOTÃO TOPO (DESAFIO 1) -->
+    <a href="#topo" class="btn-topo">▲ Topo</a>
+
+</body>
+</html>

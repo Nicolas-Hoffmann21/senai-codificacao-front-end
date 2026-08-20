@@ -1,0 +1,264 @@
+/* ==================================================
+   FASE 2: IDENTIDADE VISUAL E BASE
+   Cores: 
+   Principal: #8A2519
+   Destaque: #E67E22
+   Texto: #333333
+   Fundo: #FFF9F5
+================================================== */
+body {
+    background-color: #FFF9F5;
+    color: #333333;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 80px; /* Compensa o header fixo */
+}
+
+h1, h2, h3 {
+    color: #8A2519;
+}
+
+/* ==================================================
+   FASE 4: CENTRALIZAR CONTEÚDO
+================================================== */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ==================================================
+   REVISÃO ANTERIOR: CABEÇALHO FIXO E MENU
+================================================== */
+#topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8A2519;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.container-header {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#topo h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #E67E22;
+    border-radius: 5px;
+}
+
+/* ==================================================
+   FASE 3: BANNER
+================================================== */
+#banner {
+    background-color: #FEEEDD; /* Tom claro da paleta */
+    padding: 50px 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#banner h2 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+/* ==================================================
+   FASE 4 E REVISÃO: CARDS LADO A LADO E ETIQUETA
+================================================== */
+.grade {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 250px;
+    position: relative; /* Para a etiqueta absolute funcionar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* DESAFIO 2 */
+}
+
+/* DESAFIO OPCIONAL 2: Efeito ao passar o mouse */
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.etiqueta {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #8A2519;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* FASE 7: O CARD EM DESTAQUE */
+.destaque {
+    border: 2px solid #E67E22;
+    background-color: #FFFDFB;
+}
+
+/* ==================================================
+   FASE 5: A TABELA DE TAMANHOS
+================================================== */
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: white;
+}
+
+.tabela th {
+    background-color: #8A2519;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabela td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ==================================================
+   FASE 6: PREÇOS E BOTÕES
+================================================== */
+.preco {
+    color: #E67E22;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.botao {
+    background-color: #E67E22;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #C0392B; /* Cor mais escura */
+}
+
+/* ==================================================
+   FASE 8: O FORMULÁRIO
+================================================== */
+.formulario {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    box-sizing: border-box; /* Garante que o padding não estoure a largura de 100% */
+}
+
+/* ==================================================
+   FASE 9: RODAPÉ
+================================================== */
+footer {
+    background-color: #333333;
+    color: #EEEEEE;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #E67E22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==================================================
+   DESAFIO OPCIONAL 1: BOTÃO TOPO
+================================================== */
+.btn-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #8A2519;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn-topo:hover {
+    background-color: #5C1911;
+}
