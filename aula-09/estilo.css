@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0B1020;
+  color: #F5F7FF;
+}
+
+/* Fase 5: Layout Geral com Grid Templates */
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas:
+    "header"
+    "principal"
+    "rodape";
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+
+.area-header {
+  grid-area: header;
+}
+
+.area-principal {
+  grid-area: principal;
+  padding: 0 30px;
+}
+
+.area-rodape {
+  grid-area: rodape;
+}
+
+/* Fase 6: Navbar (Grid dentro do cabeçalho) */
+.area-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: #161D33;
+  padding: 20px 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #21D4FD;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a, .rodape-links a {
+  color: #F5F7FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover, .rodape-links a:hover {
+  color: #21D4FD;
+}
+
+/* Espaçamento padrão para seções */
+.secao {
+  margin-bottom: 50px;
+}
+
+/* Fase 7: Grade de Serviços */
+.grade-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card-servico {
+  background-color: #161D33;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: translateY(-5px);
+  background-color: #1c2541;
+}
+
+.icone {
+  fill: #6C63FF;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.card-servico:hover .icone {
+  fill: #21D4FD;
+  transform: scale(1.1);
+}
+
+/* Fase 8: Portfólio (Grid responsivo com itens quadrados) */
+.grade-portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.item-portfolio {
+  background-color: #161D33;
+  border-radius: 12px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.item-portfolio:hover {
+  transform: scale(1.03);
+}
+
+/* Fase 9: Como funciona (3 colunas) */
+.grade-passos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.passo {
+  background-color: #161D33;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.numero-passo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6C63FF;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Deixar os passos empilhados em telas menores */
+@media (max-width: 768px) {
+  .grade-passos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Fase 10: Sobre (Duas colunas) */
+.secao-sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.sobre-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  background-color: #161D33;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Fase 11: Rodapé */
+.area-rodape {
+  background-color: #161D33;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape-links {
+  display: flex;
+  gap: 20px;
+}
