@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja E-commerce</h1>
+        <button class="cart-icon-btn">
+            🛒 Carrinho <span id="cart-counter">0</span>
+        </button>
+    </header>
+
+    <div class="container">
+        <!-- Vitrine de Produtos (Passo 1) -->
+        <main>
+            <h2>Produtos Disponíveis</h2>
+            <div id="lista-produtos" class="products-grid"></div>
+        </main>
+
+        <!-- Carrinho de Compras (Passos 3, 5 e 7) -->
+        <aside class="cart-section">
+            <h2>Seu Carrinho</h2>
+            <div id="area-carrinho" class="cart-items"></div>
+            
+            <div class="cart-total">
+                <span id="elemento-total">Total: R$ 0.00</span>
+            </div>
+            
+            <button class="btn" id="btn-finalizar">Finalizar Compra</button>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
