@@ -1,0 +1,28 @@
+<div>
+  <label>Peso (kg):</label>
+  <input type="number" name="peso" [(ngModel)]="peso">
+
+  <br><br>
+
+  <label>Altura (m):</label>
+  <input type="number" name="altura" [(ngModel)]="altura">
+
+  <br><br>
+
+  <button type="button" (click)="calcularImc()">Calcular IMC</button>
+  <button type="button" (click)="limpar()">Limpar</button>
+
+  <!-- Substituição do *ngIf por @if -->
+  @if (mensagemErro) {
+    <p class="mensagem-erro">{{ mensagemErro }}</p>
+  }
+
+  <!-- Substituição do *ngIf por @if -->
+  @if (calculado) {
+    <div>
+      <h3>Resultado:</h3>
+      <p>IMC: {{ resultado.toFixed(2) }}</p>
+      <p>Classificação: {{ classificarImc() }}</p>
+    </div>
+  }
+</div>
